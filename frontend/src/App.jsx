@@ -10,6 +10,7 @@ function App() {
   useEffect( () => {
     fetchData()
     console.log(todos);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
 
   const fetchData = async () => {
