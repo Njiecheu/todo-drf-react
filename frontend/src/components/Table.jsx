@@ -51,7 +51,7 @@ const Table = ({todos, setTodos, isLoading}) => {
 
   return (
     <div className='py-2 overflow-x-auto'>
-      <table className='w-full max-w-4xl'>
+      <table className='mx-auto w-full max-w-4xl'>
         <thead className='border-b-2 border-black'>
           <tr>
             <th className='p-3 text-sm font-semibold tracking-wide text-left text-black'>Checkbox</th>

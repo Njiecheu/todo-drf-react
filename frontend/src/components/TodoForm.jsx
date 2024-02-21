@@ -29,7 +29,7 @@ const TodoForm = ({setTodos, fetchData}) => {
     }
   }
   return (
-    <div className="flex flex-col md:flex-row items-stretch">
+    <div className="flex flex-col md:flex-row justify-center items-stretch">
       <input
         type="text"
         placeholder="Add Todo"

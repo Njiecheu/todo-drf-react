@@ -1,0 +1,27 @@
+/* Styles de la barre de défilement */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+
+  /* Effet d'ombre sur la hover de la barre de défilement */
+  ::-webkit-scrollbar-thumb:active {
+    background-color: #333;
+  }
+
+  /* Style pour les coins de la barre de défilement */
+  ::-webkit-resizer {
+    background-color: #f1f1f1;
+  }
