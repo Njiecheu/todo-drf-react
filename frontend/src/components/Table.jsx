@@ -57,7 +57,7 @@ const Table = ({todos, setTodos, isLoading}) => {
             <th className='p-3 text-sm font-semibold tracking-wide text-left text-black'>Checkbox</th>
             <th className='p-3 text-sm font-semibold tracking-wide text-left text-black'>To Do</th>
             <th className='p-3 text-sm font-semibold tracking-wide text-left text-black'>Status</th>
-            <th className='p-3 text-sm font-semibold tracking-wide text-left text-black'>Data Created</th>
+            <th className='p-3 text-sm font-semibold tracking-wide text-left text-black'>Date Created</th>
             <th className='p-3 text-sm font-semibold tracking-wide text-left text-black'>Actions</th>
           </tr>
         </thead>
