@@ -50,8 +50,8 @@ const Table = ({todos, setTodos, isLoading}) => {
   }
 
   return (
-    <div className='py-2'>
-      <table className='w-11/12 max-w-4xl'>
+    <div className='py-2 overflow-x-auto'>
+      <table className='w-full max-w-4xl'>
         <thead className='border-b-2 border-black'>
           <tr>
             <th className='p-3 text-sm font-semibold tracking-wide text-left text-black'>Checkbox</th>
@@ -76,7 +76,7 @@ const Table = ({todos, setTodos, isLoading}) => {
                   <td className='p-3 text-sm text-justify'>
                     <span className={`p-1.5 text-xs text-black font-medium tracking-wider rounded-md ${todoItem.completed ? `bg-green-300` : `bg-red-300`}`}>{todoItem.completed ? `Complete` : `Incomplete`}</span>
                   </td>
-                  <td className='p-3 text-sm text-black'>{new Date(todoItem.created).toLocaleString()}</td>
+                  <td className='p-3 text-sm text-black sm:table-cell'>{new Date(todoItem.created).toLocaleString()}</td>
                   <td className='p-3 text-sm font-medium grid grid-flow-col items-center mt-5'>
                     <span className="text-xl">
                       <label htmlFor="my_modal_6" className="text-black cursor-pointer" onClick={() => seteditText(todoItem)}><MdEditNote/></label>

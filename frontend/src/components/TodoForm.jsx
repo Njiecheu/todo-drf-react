@@ -29,15 +29,15 @@ const TodoForm = ({setTodos, fetchData}) => {
     }
   }
   return (
-    <div>
+    <div className="flex flex-col md:flex-row items-stretch">
       <input
         type="text"
         placeholder="Add Todo"
-        className="input input-bordered input-info w-full max-w-xs bg-white"
+        className="input input-bordered input-info w-full max-w-xs bg-white mb-2 md:mb-0 md:mr-2"
         onChange={handleChange}
         value={newTodo.body}/>
       <button
-        className="btn btn-primary ml-5 text-white"
+        className="btn btn-primary text-white w-20"
         onClick={postTodo}
         onKeyDown={(e) => {
           if (e.key === 'Enter') {
